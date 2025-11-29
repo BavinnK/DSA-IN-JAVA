@@ -63,6 +63,10 @@ public class LinkedListJava {
 		head=addNode(head,24);
 		head=addNode(head,11);
 		printList(head);
+		head=deleteNode(head,2);
+		System.out.println("");
+		printList(head);
+		
 	
 	}
 }
