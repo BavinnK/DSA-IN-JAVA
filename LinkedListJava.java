@@ -43,8 +43,26 @@ public class LinkedListJava {
 			return head;
 		}
 	}
+	static  void printList(Node node){
+		if(node==null){
+			System.out.println("there is no data to print");
+			return;
+		}
+		while(node.next!=null){
+			System.out.print(" "+node.data);
+			node=node.next;
+		}
+		System.out.print(" "+node.data);
+		return;
+	}
 	public static void main(String[] args) {
-		
+		Node head=null;
+		head=addNode(head,23);
+		head=addNode(head,98);
+		head=addNode(head,65);
+		head=addNode(head,24);
+		head=addNode(head,11);
+		printList(head);
 	
 	}
 }
